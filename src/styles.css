@@ -42,3 +42,16 @@
  .shelf-frame-editorial .book-spine small{display:none}
  .shelf-frame-editorial .wood-plank{margin:0 -7px;height:15px}
 }
+
+/* Improved book spine legibility and editorial star rating */
+.shelf-frame-editorial .book-title{display:block;overflow:hidden;text-overflow:clip;max-height:64%;line-height:1.15;white-space:normal;overflow-wrap:normal;word-break:normal;font-size:clamp(10px,.95vw,14px)}
+.shelf-frame-editorial .book--short .book-title{font-size:clamp(12px,1.13vw,17px);font-weight:bold;letter-spacing:.03em}
+.shelf-frame-editorial .book--medium .book-title{font-size:clamp(11px,1.02vw,15px)}
+.shelf-frame-editorial .book--long .book-title{font-size:clamp(10px,.87vw,13px);max-height:70%}
+.shelf-frame-editorial .book:focus-visible{outline-offset:7px}
+.book-rating{margin:24px 0;padding:16px 19px;border:1px solid #e1cbbf;background:#f5e9df;display:flex;align-items:flex-start;flex-direction:column;gap:7px}
+.book-rating strong{font-family:Georgia,serif;font-size:19px;font-weight:400;color:#591e32}
+.rating-stars{display:flex;gap:5px;font-size:27px;line-height:1;letter-spacing:1px;color:#cdbbad}
+.rating-stars .is-filled{color:#85334c}
+.book-rating small{font-size:12px;color:#806d67}
+@media(max-width:700px){.shelf-frame-editorial .book--short .book-title{font-size:12px}.shelf-frame-editorial .book--medium .book-title{font-size:11px}.shelf-frame-editorial .book--long .book-title{font-size:10px}}
